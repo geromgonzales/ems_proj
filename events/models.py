@@ -14,5 +14,5 @@ class Event(models.Model):
     date_created = models.DateTimeField("date Created", auto_now_add=True )
     
 
-    def _str_(self):
+    def __str__(self):
         return self.name
