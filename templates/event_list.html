@@ -8,22 +8,22 @@ All Events
 <div class="card">
         <div class="card-header bg-primary">
          All Events
-        </div>
+             </div>
         <div class="card-body">
-                <div class="list-group">
-                        {% for event in event_list %}
+             <div class="list-group">
+                  {% for event in event_list %}
                         
-                                <a href="{% url 'event_detail' event.pk %}" class="list-group-item list-group-item-action flex-column align-items-start ">
-                                  <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">{{event.name}} </h5>
-                                    <small>{{event.date_from}}-{{event.date_to}} at {{event.venue}}</small>
-                                  </div>
-                                  <p class="mb-1">{{event.description | slice:":50"}}...</p>
-                                </a>
+                  <a href="{% url 'event_detail' event.pk %}" class="list-group-item list-group-item-action flex-column align-items-start ">
+       <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{event.name}} </h5>
+            <small>{{event.date_from}}-{{event.date_to}} at {{event.venue}}</small>
+       </div>
+            <p class="mb-1">{{event.description | slice:":50"}}...</p>
+           </a>
                              
-                        {% endfor %}
-                            </div>
-        </div>
+      {% endfor %}
+      </div>
+      </div>
       
       </div>
 

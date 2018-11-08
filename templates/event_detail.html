@@ -24,7 +24,7 @@ Event Details
         <p class="card-text">
                 {{ event.description }}
         </p>
-        
+        <a href="{% url 'event_join' event.pk %}" class="btn btn-danger">Join Event</a>
       
         </div>
       </div>
